@@ -1,0 +1,15 @@
+{
+  "name": "test1-yargscommand",
+  "version": "1.0.0",
+  "description": "Repeating yargs command",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "Boris Karakolev",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yargs": "^16.2.0"
+  }
+}

@@ -8,6 +8,13 @@ import ApprovalCard from './components/ApprovalCard'
 const App = () => {
     return (
         <div className='ui container comments'>
+            <ApprovalCard> 
+              <div>
+                <h4>Warning message!</h4>
+                Are you sure you want to do this?
+              </div>
+            </ApprovalCard>
+
             <ApprovalCard>
               {/* Nesting Component */}
               <CommentDetail 

@@ -8,14 +8,14 @@ class App extends React.Component {
 
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      (position) => {this.setState({ latitude: position.coords.latitude });
+      (position) => {
+        this.setState({ latitude: position.coords.latitude });
       },
       (err) => this.setState({ error: err.message })
     );
   }
 
-  // React says we have to define render!!
-  render() {
+  renderContent() {
     if (this.state.error && !this.state.latitude) {
       return <div>Error: {this.state.error}</div>;
     }
@@ -23,7 +23,11 @@ class App extends React.Component {
     if (!this.state.error && this.state.latitude) {
       return <SeasonDisplay latitude={this.state.latitude} />;
     }
-    return <Loader message='Please accept location request'/>;
+    return <Loader message="Please accept location request" />;
+  }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>
   }
 }
 

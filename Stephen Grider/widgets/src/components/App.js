@@ -20,28 +20,36 @@ import Dropdown from "./Dropdown";
 
 const options = [
   {
-    label: 'The color red',
-    value: 'red'
+    label: "The color red",
+    value: "red",
   },
   {
-    label: 'The color green',
-    value: 'green'
+    label: "The color green",
+    value: "green",
   },
   {
-    label: 'A shade of blue',
-    value: 'blue'
-  }
-]
+    label: "A shade of blue",
+    value: "blue",
+  },
+];
 
 const App = () => {
-  const [selected, setSelected] = useState(options[0])
+  const [selected, setSelected] = useState(options[0]);
+  const [showDropdown, setShowDropdown] = useState(true);
+  
+  
   return (
     <div>
-      <Dropdown
-      options={options} 
-      selected={selected} 
-      onSelectionChange={setSelected}
-      />
+      <button onClick={() => setShowDropdown(!showDropdown)}>
+        Toggle Dropdown
+      </button>
+      {showDropdown ? (
+        <Dropdown
+          options={options}
+          selected={selected}
+          onSelectionChange={setSelected}
+        />
+      ) : null}
     </div>
   );
 };

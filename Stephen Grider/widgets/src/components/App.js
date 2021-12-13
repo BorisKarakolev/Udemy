@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./Header"
 import Accordion from "./Accordion";
 import Search from "./Search";
 import Translate from "./Translate";
@@ -35,36 +36,13 @@ const options = [
   },
 ];
 
-const showAccordion = () => {
-  if(window.location.pathname === '/') {
-    return <Accordion items={items}/>
-  }
-}
-
-const showList = () => {
-  if(window.location.pathname === '/list') {
-    return <Search />
-  }
-}
-
-const showDropdown = () => {
-  if(window.location.pathname === '/dropdown') {
-    return <Dropdown />
-  }
-}
-
-const showTranslate = () => {
-  if(window.location.pathname === '/translate') {
-    return <Translate />
-  }
-}
-
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true);
+  // const [showDropdown, setShowDropdown] = useState(true);
 
   return (
     <div>
+      <Header />
       <Route path='/'>
         <Accordion items={items}/>
       </Route>

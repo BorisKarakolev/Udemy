@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import useVideos from "../hooks/useVideos";
 import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import useVideos from "../hooks/useVideos";
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const [videos, search] = useVideos("most searched");
+  const [videos, search] = useVideos("buildings");
 
   useEffect(() => {
     setSelectedVideo(videos[0]);

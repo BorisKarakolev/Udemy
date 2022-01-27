@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "title": "Other new stream",
+      "description": "I created a new stream",
+      "userId": "117765078953324359681",
+      "id": 1
+    },
+    {
+      "title": "Unexpected Behavior",
+      "description": "Didin't expect that",
+      "userId": "117765078953324359681",
+      "id": 2
+    },
+    {
+      "title": "Checking inputs",
+      "description": "check",
+      "userId": "117765078953324359681",
+      "id": 3
+    },
+    {
+      "title": "Check",
+      "description": "Check",
+      "userId": "117765078953324359681",
+      "id": 4
+    },
+    {
+      "title": "Smething new",
+      "description": "Programmatic nav",
+      "userId": "117765078953324359681",
+      "id": 5
+    }
+  ]
+}

@@ -25,10 +25,15 @@
       "id": 4
     },
     {
-      "title": "Smething new",
-      "description": "Programmatic nav",
+      "title": "New edit ",
+      "description": "with patch req",
       "userId": "117765078953324359681",
       "id": 5
+    },
+    {
+      "title": "This stream is edited",
+      "description": "New Description",
+      "id": 6
     }
   ]
 }
